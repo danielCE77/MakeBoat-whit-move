@@ -11,8 +11,8 @@ import java.awt.Color;
  * @author DANIC
  */
 public class ConfigBoat {
-    public static final int WINDOW_W = 400;
-    public static final int WINDOW_H = 400;
+    public static final int WINDOW_W = 700;
+    public static final int WINDOW_H = 500;
     public static final int BASE_X [] = {100, 123, 311, 340};
     public static final int BASE_Y [] = {300, 360, 357, 300};
     public static final Color COLOR_BROWN = new Color(34,27,21);

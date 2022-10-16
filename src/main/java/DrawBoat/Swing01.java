@@ -15,7 +15,7 @@ public class Swing01 {
         MyCanvas canvas = new MyCanvas();   //Draw ton canvas
 
         window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        window.setSize(400, 400);
+        window.setSize(700, 500);
         window.add(canvas);
         window.pack();  // set the "size of frame to preferred sizes"
         window.setResizable(false); // Do not change the size frame whit mouse

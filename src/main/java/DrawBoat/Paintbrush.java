@@ -21,18 +21,27 @@ public class Paintbrush {
     }
     public void drawSky() {
         g.setColor(new Color (127,233,245));
-        g.fillRect(0,0, 400, 100);
+        g.fillRect(0,0, 700, 100);
 
         g.setColor(Color.YELLOW);
         g.fillOval(40, 40, 20, 20);
     }
-    public void drawMountains() {
+    public void drawMountains(int x1,int y1,int x2,int y2,int x3,int y3) {
         Polygon triangle = new Polygon();
-        triangle.addPoint(15,120);
+        /*triangle.addPoint(15,120);
         triangle.addPoint(100,40);
         triangle.addPoint(180,130);
-        g.setColor(COLOR_BROWN);
+        g.setColor(COLOR_BROWN);*/
+        triangle.addPoint(x1,y1);
+        triangle.addPoint(x2,y2);
+        triangle.addPoint(x3,y3);
+        g.setColor(ConfigBoat.COLOR_BROWN);
         g.fillPolygon(triangle);
+    }
+    
+    public void drawHighway(){
+        g.setColor(Color.darkGray);
+        g.fillRect(0, 100, 700, 100);
     }
     public void drawTree() {
         int start = 200;
